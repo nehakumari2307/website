@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya%20Sans%20SC">
+
+    <link rel="shortcut icon" type="image/png" href="images/common/number_10.jpeg" />
+    <title>Web Series</title>
+</head>
+
+<body>
+    <div class="container">
+        <a href="#shows-container" class="skip">Skip to Main Content</a>
+        <header>
+            <img src="images/common/neha_top_ten.png" alt="" class="logo-title">
+            <div class="background">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Youtube</a></li>
+                        <li><a href="podcast.html">Podcast</a></li>
+                        <li><a href="apps.html">Game App</a></li>
+                        <li class="highlighted"><a href="shows.html">Shows</a></li>
+                    </ul>
+                    <div class="side">
+                        <!-- <div class="popup" onClick="filter()"> Sort Page </div> -->
+                        <button class="know_more">Contact Me</button>
+                        <div id="my_modal" class="modal ">
+                            <div class="modal-content effect">
+                                <span class="close"> &times;</span>
+                                <div class="form_img">
+                                    <img src="images/common/me.jpg" alt="neha's photo" />
+                                </div>
+                                <div class="text">
+                                    <p>Hi, I am Neha Kumari</p>
+                                    <p>I am a first year graduate student at the University of Michigan, pursing
+                                        master's in information
+                                        science,
+                                        human computer interaction pathway.</p>
+                                    <p>To learn about my journey, kindly send me your details and I shall contact you.
+                                        Thanks</p>
+                                </div>
+                                <div>
+                                    <form action="#" method="get">
+                                        <fieldset>
+                                            <legend>Your details</legend>
+                                            <ol>
+                                                <li>
+                                                    <label for="name">Name</label>
+                                                    <input id="name" name="name" type="text"
+                                                        placeholder="First and last name" required autofocus>
+                                                </li>
+                                                <li>
+                                                    <label for="email">Email</label>
+                                                    <input id="email" name="email" type="email"
+                                                        placeholder="example@domain.com" required>
+                                                </li>
+                                                <li>
+                                                    <label for="phone">Phone</label>
+                                                    <input id="phone" type="text" class="form-control bfh-phone"
+                                                        data-format="+1 (ddd) ddd-dddd" placeholder="+1 (ddd) ddd-dddd"
+                                                        id="phone">
+                                                </li>
+                                            </ol>
+                                        </fieldset>
+                                        <fieldset>
+                                            <button type=submit class="button">Submit</button>
+                                        </fieldset>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="popup">
+                            <div class="popuptext" id="myPopUp">
+                                <div class="controls">
+                                    <div class="each">
+                                        <label for="select-filter" class="label-filter"> Sort By Location : </label>
+                                        <select class="select-filter">
+                                            <option value="all">All location</option>
+                                            <option value=".green">Canada</option>
+                                            <option value=".blue">Australia</option>
+                                            <option value=".pink">India</option>
+                                            <option value=".yellow">United States</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="each">
+                                        <label for="select-sort" class="label-sort"> Sort Aplhabetical : </label>
+                                        <select class="select-sort">
+                                            <option value="default:asc">Ascending</option>
+                                            <option value="default:desc">Descending</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="each">
+                                        <label for="select-sort-years"> Sort by Publish Year : </label>
+                                        <select class="select-sort-years">
+                                            <option value="order:asc" data-sort="order:asc">Ascending</option>
+                                            <option value="order:desc" data-sort="order:desc">Descending</option>
+                                            <option value="random" data-sort="random">Random</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <button id="done" onclick="remove()"> Done</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="toggel-space">
+            <span class="toggel-label">Plain Look</span>
+            <label class="switch">
+                <input type="checkbox" onchange="applyfilter()" id="switch">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggel-label">Funky Look</span>
+        </div>
+        <main id="shows-container">
+            <div>
+                <h1> US Shows </h1>
+            </div>
+            <div class="scrolling-wrapper" tabindex="0">
+                <div class="card">
+                    <img src="images/shows/queens_gambit.jpg" alt="queen gambit's thumbnail photo" />
+                    <h2>The Queen's Gambit</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/you.jpg" alt="you's thumbnail photo" />
+                    <h2>YOU</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/money_heist.jpg" alt="money heist's thumbnail photo" />
+                    <h2>Money Heist</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/schitt_creek.jpeg" alt="schitt creek's thumbnail photo" />
+                    <h2>Schitt's Creek</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/haunting_hill_house.jpg" alt="haunting of hill house's thumbnail photo" />
+                    <h2>The Haunting Of Hill House</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/friends.jpg" alt="friends's thumbnail photo" />
+                    <h2>Friends</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/the_crown.jpeg" alt="the crown's thumbnail photo" />
+                    <h2>The crown</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/black_mirror.jpg" alt="black mirror's thumbnail photo" />
+                    <h2>Black Mirror</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/masterchef.jpg" alt="masterchef's thumbnail photo" />
+                    <h2>Masterchef Australia</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/big_bang.jpeg" alt="the big bang theory's thumbnail photo" />
+                    <h2>The Big Bang theory</h2>
+                </div>
+            </div>
+
+            <div>
+                <h1> Bollywood Shows </h1>
+            </div>
+            <div class="scrolling-wrapper" tabindex="0">
+                <div class="card">
+                    <img src="images/shows/heaven.jpeg" alt="made in heaven's thumbnail photo" />
+                    <h2>Made In Heaven</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/breathe.jpg" alt="breathe's thumbnail photo" />
+                    <h2>Breathe</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/little_things.jpeg" alt="little things's thumbnail photo" />
+                    <h2>Little Things</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/the_family_man.jpeg" alt="the family man's thumbnail photo" />
+                    <h2>The Family Man</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/kota_factory.jpeg" alt="kota factory's thumbnail photo" />
+                    <h2>Kota Factory</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/mismatched.jpg" alt="mismatched's thumbnail photo" />
+                    <h2>Mismatched</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/ray.jpeg" alt="rays's thumbnail photo" />
+                    <h2>Ray</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/one_mic_stand.jpeg" alt="one mic stand's thumbnail photo" />
+                    <h2>One Mic Stand</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/masaba_masaba.jpg" alt="masaba masaba's thumbnail photo" />
+                    <h2>Masaba Masaba</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/agent_bollywood.jpg" alt="call my agent bollywood's thumbnail photo" />
+                    <h2>Call My Agent Bollywood</h2>
+                </div>
+            </div>
+
+            <div>
+                <h1> Korean Shows </h1>
+            </div>
+            <div class="scrolling-wrapper" tabindex="0">
+                <div class="card">
+                    <img src="images/shows/squid_game.jpeg" alt="squid game's thumbnail photo" />
+                    <h2>Squid Game</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/crash_landing.jpg" alt="crash landing on you's thumbnail photo" />
+                    <h2>Crash Landing On You</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/its_okay_not_to_be_okay.jpeg"
+                        alt="its okay not to be okay's thumbnail photo" />
+                    <h2>It's Okay Not to be Okay</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/lovestruck_in_city.jpeg" alt="lovestruck in city's thumbnail photo" />
+                    <h2>LoveStruck In The City</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/the_king.jpg" alt="the king's thumbnail photo" />
+                    <h2>The King</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/boys_over_flower.jpeg" alt="boys over flowers's thumbnail photo" />
+                    <h2>Boys Over Flowers</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/itaewon.jpeg" alt="itaewon class's thumbnail photo" />
+                    <h2>Itaewon Class</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/legend_of_blue_sea.jpeg" alt="legend of blue sea's thumbnail photo" />
+                    <h2>The Legend Of Blue Sea</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/my_shy_boss.jpeg" alt="my shy boss's thumbnail photo" />
+                    <h2>My Shy Boss</h2>
+                </div>
+                <div class="card">
+                    <img src="images/shows/stranger.jpg" alt="stranger's thumbnail photo" />
+                    <h2>Stranger</h2>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>
+                &copy; Neha Kumari <br /> SI 539 - Web Design Assignment <br />
+                School of Information <br /> University of Michigan <br />
+            </p>
+            <div>
+                <span><img src="images/common/facebook.png" alt="facebook's thumbnail photo" />
+                </span>
+                <span><img src="images/common/twitter.png" alt="twitter's thumbnail photo" />
+                </span>
+                <span><img src="images/common/linkedin.png" alt="linkedin's thumbnail photo" />
+                </span>
+            </div>
+        </footer>
+
+    </div>
+    <script src="dist/mixitup.min.js"></script>
+    <script>
+
+        var containerEl = document.querySelector('#shows-container');
+        var mixer = mixitup(containerEl);
+
+        //modal changes
+        var modal = document.getElementById("my_modal");
+        var btn = document.getElementsByClassName("know_more")[0];
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // close modal if user click outside the modal.
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function applyfilter() {
+            var toggle_switch = document.getElementById("switch");
+            if (toggle_switch.checked) {
+                containerEl.classList.add('show_effect');
+            } else {
+                containerEl.classList.remove('show_effect');
+            }
+        }
+
+    </script>
+</body>
+
+</html>

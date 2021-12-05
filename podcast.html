@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya%20Sans%20SC">
+
+
+    <link rel="shortcut icon" type="image/png" href="images/common/number_10.jpeg" />
+    <title>Podcast Channel</title>
+</head>
+
+<body>
+    <div class="container">
+        <a href="#podcast-container" class="skip">Skip to Main Content</a>
+        <header>
+            <img src="images/common/neha_top_ten.png" alt="" class="logo-title">
+            <div class="background">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Youtube</a></li>
+                        <li class="highlighted"><a href="podcast.html">Podcast</a></li>
+                        <li><a href="apps.html">Game App</a></li>
+                        <li><a href="shows.html">Shows</a></li>
+                    </ul>
+                    <div class="side">
+                        <!-- <div class="popup" onClick="filter()"> Sort Page </div> -->
+                        <button class="know_more">Contact Me</button>
+                        <div id="my_modal" class="modal ">
+                            <div class="modal-content effect">
+                                <span class="close"> &times;</span>
+                                <div class="form_img">
+                                    <img src="images/common/me.jpg" alt="neha's photo" />
+                                </div>
+                                <div class="text">
+                                    <p>Hi, I am Neha Kumari</p>
+                                    <p>I am a first year graduate student at the University of Michigan, pursing
+                                        master's in information
+                                        science,
+                                        human computer interaction pathway.</p>
+                                    <p>To learn about my journey, kindly send me your details and I shall contact you.
+                                        Thanks</p>
+                                </div>
+                                <div>
+                                    <form action="#" method="get">
+                                        <fieldset>
+                                            <legend>Your details</legend>
+                                            <ol>
+                                                <li>
+                                                    <label for="name">Name</label>
+                                                    <input id="name" name="name" type="text"
+                                                        placeholder="First and last name" required autofocus>
+                                                </li>
+                                                <li>
+                                                    <label for="email">Email</label>
+                                                    <input id="email" name="email" type="email"
+                                                        placeholder="example@domain.com" required>
+                                                </li>
+                                                <li>
+                                                    <label for="phone">Phone</label>
+                                                    <input id="phone" type="text" class="form-control bfh-phone"
+                                                        data-format="+1 (ddd) ddd-dddd" placeholder="+1 (ddd) ddd-dddd"
+                                                        id="phone">
+                                                </li>
+                                            </ol>
+                                        </fieldset>
+                                        <fieldset>
+                                            <button type=submit class="button">Submit</button>
+                                        </fieldset>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="popup">
+                            <div class="popuptext" id="myPopUp">
+                                <div class="controls">
+                                    <div class="each">
+                                        <label for="select-filter" class="label-filter"> Sort By Location : </label>
+                                        <select class="select-filter">
+                                            <option value="all">All location</option>
+                                            <option value=".green">Canada</option>
+                                            <option value=".blue">Australia</option>
+                                            <option value=".pink">India</option>
+                                            <option value=".yellow">United States</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="each">
+                                        <label for="select-sort" class="label-sort"> Sort Aplhabetical : </label>
+                                        <select class="select-sort">
+                                            <option value="default:asc">Ascending</option>
+                                            <option value="default:desc">Descending</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="each">
+                                        <label for="select-sort-years"> Sort by Publish Year : </label>
+                                        <select class="select-sort-years">
+                                            <option value="order:asc" data-sort="order:asc">Ascending</option>
+                                            <option value="order:desc" data-sort="order:desc">Descending</option>
+                                            <option value="random" data-sort="random">Random</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <button id="done" onclick="remove()"> Done</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div id="background-image"></div>
+        <div id="align">
+            <main id="podcast-container">
+                <div class="title a" tabindex="0">
+                    <div class="podcast_common">
+                        <img src="images/podcast/joe_rogan.png" alt="joe rogan's thumbnail photo" />
+                    </div>
+                    <div class="podcast">
+                        <h1 class="podcast_title">1. The Joe Rogan Experience</h1>
+                        <p class="podcast_text">
+                            <strong>Hosted by: </strong>Joe Rogan<strong><br></strong><br><strong>Running since:
+                            </strong>2009<strong><br>Genre</strong>: Talk / Interviews<br><strong>Podcast
+                                language:</strong>
+                            English<br><br><strong>Broadcast from:</strong> Austin, Texas,
+                            USA<br><strong>Owned/Published
+                                by:</strong> Spotify Technology SA
+                        </p>
+                    </div>
+                </div>
+                <div class="title" tabindex="0">
+                    <div class="podcast_common">
+                        <img src="images/podcast/ted_talk.png" alt="ted talk's thumbnail photo" />
+                    </div>
+                    <div class="podcast">
+                        <h2 class="podcast_title">2. TED Talks Daily</h2>
+                        <p class="podcast_text">
+                            <strong>Hosted by: </strong>Elise Hu<strong><br><br>Running since:
+                            </strong>2020<strong><br>Genre: </strong>Talk<br><strong>Podcast language:</strong>
+                            English<br><br><strong>Broadcast from:</strong> Los Angeles, California,
+                            USA<strong><br>Owned/Published by:</strong> TED Foundation
+                        </p>
+                    </div>
+                </div>
+                <div class="title" tabindex="0">
+                    <div class="podcast_common">
+                        <img src="images/podcast/times.png" alt="the daily's thumbnail photo" />
+                    </div>
+                    <div class="podcast">
+                        <h1 class="podcast_title">3. The Daily</h1>
+                        <p class="podcast_text">
+                            <strong>Hosted by: </strong>Michael Barbaro<strong><br><br>Running since:
+                            </strong>2017<strong><br>Genre: </strong>News<br><strong>Podcast language:</strong>
+                            English<br><br><strong>Broadcast from:</strong> New York City, New York,
+                            USA<strong><br>Owned/Published by:</strong> The New York Times Company
+                        </p>
+                    </div>
+                </div>
+                <div class="title" tabindex="0">
+                    <div class="podcast_common">
+                        <img src="images/podcast/michelle_obama.jpeg" alt="michelle obama's thumbnail photo" />
+                    </div>
+                    <div class="podcast">
+                        <h1 class="podcast_title">4. The Michelle Obama Podcast</h1>
+                        <p class="podcast_text">
+                            <strong>Hosted by:</strong> Michelle Obama<strong><br><br>Running since:
+                            </strong>2020<strong><br>Genre: </strong>Talk / Interviews<br><strong>Podcast
+                                language:</strong>
+                            English<br><br><strong>Broadcast from:</strong> Washington, D.C.,
+                            USA<strong><br>Owned/Published
+                                by:</strong> Higher Ground Productions &amp; Spotify
+                        </p>
+                    </div>
+                </div>
+                <div class="title" tabindex="0">
+                    <div class="podcast_common">
+                        <img src="images/podcast/fresh_air.png" alt="fresh air's thumbnail photo" />
+                    </div>
+                    <div class="podcast">
+                        <h1 class="podcast_title">5. Fresh Air</h1>
+                        <p class="podcast_text">
+                            <strong>Hosted by:</strong> Terry Gross<strong><br><br>Running since:
+                            </strong>2011<strong><br>Genre: </strong>Talk, Reviews<br><strong>Podcast language:</strong>
+                            English<br><br><strong>Broadcast from:</strong> Philadelphia, Pennsylvania,
+                            USA<strong><br>Owned/Published
+                                by:</strong> National Public Radio &amp; itunes
+                        </p>
+                    </div>
+                </div>
+                <div class="title" tabindex="0">
+                    <div class="podcast_common">
+                        <img src="images/podcast/crime.png" alt="crime junkie's thumbnail photo" />
+                    </div>
+                    <div class="podcast">
+                        <h1 class="podcast_title">6. Crime Junkie</h1>
+                        <p class="podcast_text">
+                            <strong>Hosted by: </strong>Ashley Flowers &amp; Brit Prawat<strong><br><br>Running since:
+                            </strong>2017<strong><br>Genre: </strong>True crime<br><strong>Podcast language:</strong>
+                            English<br><br><strong>Broadcast from:</strong> Indianapolis, Indiana,
+                            USA<strong><br>Owned/Published by:</strong> Audio Chuck LLC
+                        </p>
+                    </div>
+                </div>
+                <div class="title" tabindex="0">
+                    <div class="podcast_common">
+                        <img src="images/podcast/stuff_you.png" alt="stuff you should know's thumbnail photo" />
+                    </div>
+                    <div class="podcast">
+                        <h1 class="podcast_title">7. Stuf You Should Know</h1>
+                        <p class="podcast_text">
+                            <strong>Hosted by: </strong>Charles Bryant &amp; Josh Clark<strong><br><br>Running since:
+                            </strong>2008<strong><br>Genre: </strong>Infotainment<br><strong>Podcast language:</strong>
+                            English<br><br><strong>Broadcast from:</strong> Atlanta, Georgia,
+                            USA<strong><br>Owned/Published
+                                by:</strong> iHeartMedia, Inc.
+                        </p>
+                    </div>
+                </div>
+                <div class="title" tabindex="0">
+                    <div class="podcast_common">
+                        <img src="images/podcast/office_ladies.png" alt="office ladies's thumbnail photo" />
+                    </div>
+                    <div class="podcast">
+                        <h1 class="podcast_title">8. Office Ladies</h1>
+                        <p class="podcast_text">
+                            <strong>Hosted by: </strong>Angela Kinsey &amp; Jenna Fischer<strong><br><br>Running since:
+                            </strong>2019<strong><br>Genre: </strong>Behind the scenes<br><strong>Podcast
+                                language:</strong> English<br><br><strong>Broadcast
+                                from:</strong> Los Angeles, California, USA<strong><br>Owned/Published by:</strong>
+                            Scripps
+                            Company
+                        </p>
+                    </div>
+                </div>
+                <div class="title" tabindex="0">
+                    <div class="podcast_common">
+                        <img src="images/podcast/planet.png" alt="planet money's thumbnail photo" />
+                    </div>
+                    <div class="podcast">
+                        <h1 class="podcast_title">9. Planet Money</h1>
+                        <p class="podcast_text">
+                            <strong>Hosted by: </strong> Robert Smith &amp; Jacob Goldstein<strong><br><br>Running
+                                since:
+                            </strong>2008<strong><br>Genre: </strong>Economic, Business<br><strong>Podcast
+                                language:</strong> English<br><br><strong>Broadcast
+                                from:</strong> Philadelphia, Pennsylvania, USA<strong><br>Owned/Published by:</strong>
+                            National Public Radio &amp; Apple podcast
+                        </p>
+                    </div>
+                </div>
+                <div class="title" tabindex="0">
+                    <div class="podcast_common">
+                        <img src="images/podcast/pod_save_america.png" alt="pod save america's thumbnail photo" />
+                    </div>
+                    <div class="podcast">
+                        <h1 class="podcast_title">10. Pod Save America</h1>
+                        <p class="podcast_text">
+                            <strong>Hosted by: </strong>Jon Favreau, Jon Lovett &amp; Thomas
+                            Vietor<strong><br><br>Running
+                                since: </strong>2017<strong><br>Genre: </strong>Politics<br><strong>Podcast
+                                language:</strong> English<br><br><strong>Broadcast from:</strong> Los Angeles,
+                            California,
+                            USA<strong><br>Owned/Published by:</strong> Crooked Media, Inc.
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <p>
+                &copy; Neha Kumari <br /> SI 539 - Web Design Assignment <br />
+                School of Information <br /> University of Michigan <br />
+            </p>
+            <div>
+                <span><img src="images/common/facebook.png" alt="facebook's thumbnail photo" />
+                </span>
+                <span><img src="images/common/twitter.png" alt="twitter's thumbnail photo" />
+                </span>
+                <span><img src="images/common/linkedin.png" alt="linkedin's thumbnail photo" />
+                </span>
+            </div>
+        </footer>
+
+    </div>
+    <script src="dist/mixitup.min.js"></script>
+    <script>
+
+        var containerEl = document.querySelector('#podcast-container');
+        var mixer = mixitup(containerEl);
+
+        //modal changes
+        var modal = document.getElementById("my_modal");
+        var btn = document.getElementsByClassName("know_more")[0];
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // close modal if user click outside the modal.
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
