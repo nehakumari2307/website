@@ -543,6 +543,14 @@ input:checked + .slider:before {
  grid-row: 11 / span 1;
 }
 
+@media screen and (prefers-reduced-motion: reduce){
+  /*Turn off Animation*/
+  .logo-title{
+    animation: none;
+    transition: none;
+  }
+}
+
 /* Tablet View */
 
 @media all and (min-width: 650px){
@@ -670,7 +678,7 @@ input:checked + .slider:before {
 
 @media all and (min-width: 950px){
     header img{
-      height: 25vh;
+      height: 23vh;
     }
 
     @keyframes slidein {
@@ -999,5 +1007,11 @@ input:checked + .slider:before {
         animation: none;
         transition: none;
       }
+
+      /*Turn off Flip*/
+      .title:hover, .title:focus-within {
+        transition: none;
+      }
+
     }
 }
