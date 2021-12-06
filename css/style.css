@@ -211,9 +211,8 @@ img {
 }
 
 .description {
-  font-family: 'Tahoma', cursive;
+  font-family: Tahoma, cursive;
   font-size: 20px;
-  font-weight: bolder;
   line-height: 1.29;
   letter-spacing: 0.1px;
   text-align: left;
@@ -223,6 +222,7 @@ img {
 }
 .founder {
   font-family: 'Poppins';
+  font-weight: bolder;
 }
 
 .container {
@@ -230,6 +230,10 @@ img {
 }
 
 /* Podcast page */
+
+#background-image{
+  display:none;
+}
 
 .title {
   height: 85vh;
@@ -330,6 +334,10 @@ img {
 
 .toggel-label {
   padding: 5px 10px 0px 10px;
+}
+
+.show_effect {
+  filter: hue-rotate(280deg)saturate(1);
 }
 
 .switch {
@@ -749,10 +757,6 @@ input:checked + .slider:before {
       font-family: emoji;
     }
 
-    .show_effect {
-      filter: hue-rotate(280deg)saturate(1);
-    }
-
     .side {
       display: flex;
       justify-content: flex-end;
@@ -963,6 +967,7 @@ input:checked + .slider:before {
     }
 
     #background-image {
+      display: block;
       width: 100vw;
       height: 50vh;
       background-attachment: fixed; /* Parallax effect */
@@ -971,6 +976,16 @@ input:checked + .slider:before {
       color: white;
       background-repeat-y: no-repeat;
       background-image: url(../images/common/background-waves.jpeg);
+    }
+
+    #background-text {
+      color: black;
+      font-size: 2rem;
+      margin: auto;
+      width: 45%;
+      display: flex;
+      padding-top: 20rem;
+      font-family: Helvetica, sans-serif;
     }
 
     @media screen and (prefers-reduced-motion: reduce){
