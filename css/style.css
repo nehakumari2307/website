@@ -926,9 +926,11 @@ input:checked + .slider:before {
       height: 50vh;
     }
 
-    #podcast-container {
+    #container {
       display: grid;
       grid-template-columns: 50% 50%;
+      width: 80%;
+      margin: auto;
       /* padding: 40px; */
     }
 
@@ -968,11 +970,6 @@ input:checked + .slider:before {
       padding-left: 0px;
     }
     
-    #align {
-      width: 80%;
-      margin: auto;
-      /* margin-top: 150px; */
-    }
 
     #background-image {
       display: block;
@@ -990,6 +987,7 @@ input:checked + .slider:before {
       color: black;
       font-size: 2rem;
       margin: auto;
+      font-weight: bolder;
       width: 45%;
       display: flex;
       padding-top: 20rem;
