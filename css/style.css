@@ -211,8 +211,8 @@ img {
 }
 
 .description {
-  font-family: 'Pangolin', cursive;
-  font-size: 25px;
+  font-family: 'Tahoma', cursive;
+  font-size: 20px;
   font-weight: bolder;
   line-height: 1.29;
   letter-spacing: 0.1px;
@@ -281,7 +281,7 @@ img {
   padding: 0px;
   text-align: center;
   color: #000;
-  font-family: 'Pangolin', cursive;;
+  font-family: 'Tahoma', cursive;;
   font-size: 21px;
 }
 
@@ -778,6 +778,7 @@ input:checked + .slider:before {
       padding: 20px;
       border: 1px solid #888;
       width: 80%;
+      overflow: scroll;
       height: 55%;
     }
 
@@ -922,6 +923,7 @@ input:checked + .slider:before {
     .title {
       width:80%;
       height: 47vh;
+      background: transparent;
       /* transition-duration: 2s; */
       transform-style: preserve-3d;
     }

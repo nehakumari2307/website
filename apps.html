@@ -38,7 +38,6 @@
                         <li><a href="shows.html">Shows</a></li>
                     </ul>
                     <div class="side">
-                        <div class="popup" onClick="filter()"> Sort Page </div>
                         <button class="know_more">Contact Me</button>
                         <div id="my_modal" class="modal ">
                             <div class="modal-content effect">
@@ -56,7 +55,7 @@
                                         Thanks</p>
                                 </div>
                                 <div>
-                                    <form action="#" method="get">
+                                    <form action="https://formspree.io/f/mjvlbnzk" method="POST">
                                         <fieldset>
                                             <legend>Your details</legend>
                                             <ol>
@@ -81,45 +80,6 @@
                                         <fieldset>
                                             <button type=submit class="button">Submit</button>
                                         </fieldset>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="popup">
-                            <div class="popuptext" id="myPopUp">
-                                <div class="controls">
-                                    <div class="each">
-                                        <label for="select-filter" class="label-filter"> Sort By Location : </label>
-                                        <select class="select-filter">
-                                            <option value="all">All location</option>
-                                            <option value=".green">Canada</option>
-                                            <option value=".blue">Australia</option>
-                                            <option value=".pink">India</option>
-                                            <option value=".yellow">United States</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="each">
-                                        <label for="select-sort" class="label-sort"> Sort Aplhabetical : </label>
-                                        <select class="select-sort">
-                                            <option value="default:asc">Ascending</option>
-                                            <option value="default:desc">Descending</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="each">
-                                        <label for="select-sort-years"> Sort by Publish Year : </label>
-                                        <select class="select-sort-years">
-                                            <option value="order:asc" data-sort="order:asc">Ascending</option>
-                                            <option value="order:desc" data-sort="order:desc">Descending</option>
-                                            <option value="random" data-sort="random">Random</option>
-                                        </select>
-                                    </div>
-
-                                    <div>
-                                        <button id="done" type="button" onclick="remove()"> Done</button>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -173,7 +133,7 @@
                 </p>
             </div>
 
-            <div class="fifth-image">
+            <div class="fifth-image mix">
                 <img src="images/app/the_sims.jpg" alt="the sims's thumbnail photo" />
             </div>
             <div class="fifth app-text">
@@ -263,31 +223,6 @@
         var containerEl = document.querySelector('#app-container');
         var mixer = mixitup(containerEl);
 
-        // var containerEl = document.querySelector('#youtube-container');
-        var selectFilter = document.querySelector('.select-filter');
-        var selectSort = document.querySelector('.select-sort');
-        var selectYears = document.querySelector('.select-sort-years');
-
-        // var mixer = mixitup(containerEl);
-
-        selectFilter.addEventListener('change', function () {
-            var selector = selectFilter.value;
-
-            mixer.filter(selector);
-        });
-
-        selectSort.addEventListener('change', function () {
-            var order = selectSort.value;
-
-            mixer.sort(order);
-        });
-
-        selectYears.addEventListener('change', function () {
-            var year_order = selectYears.value;
-
-            mixer.sort(year_order);
-        });
-
         //modal changes
         var modal = document.getElementById("my_modal");
         var btn = document.getElementsByClassName("know_more")[0];
@@ -305,17 +240,6 @@
             if (event.target == modal) {
                 modal.style.display = "none";
             }
-        }
-
-        //pop up filter
-        function filter() {
-            var popup = document.getElementById("myPopUp");
-            popup.classList.add("show");
-        }
-
-        function remove() {
-            var popup = document.getElementById("myPopUp");
-            popup.classList.toggle("show");
         }
 
     </script>
