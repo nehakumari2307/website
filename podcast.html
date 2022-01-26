@@ -28,14 +28,19 @@
     <div class="container">
         <a href="#podcast-container" class="skip">Skip to Main Content</a>
         <header>
-            <img src="images/common/neha_header.png" alt="" class="logo-title">
+            <!-- <img src="images/common/neha_header.png" alt="" class="logo-title"> -->
+            <div class="banner">
+                <div class="typing">
+                    Neha's Top 10 Recommendations.
+                </div>
+            </div>
             <div class="background">
                 <nav>
                     <ul>
                         <li><a href="index.html">Youtube</a></li>
                         <li class="highlighted"><a href="podcast.html">Podcast</a></li>
-                        <li><a href="apps.html">Game App</a></li>
                         <li><a href="shows.html">Shows</a></li>
+                        <li><a href="apps.html">Game App</a></li>
                     </ul>
                     <div class="side">
                         <button class="know_more">Contact Me</button>
@@ -89,9 +94,9 @@
         </header>
 
         <main id="podcast-container">
-            <div id="background-image">
+            <!-- <div id="background-image">
                 <div id="background-text"> Scroll and Flip card to Know More.</div>
-            </div>
+            </div> -->
             <div id="container">
                 <div class="title a" tabindex="0">
                     <div class="podcast_common">
@@ -278,6 +283,8 @@
         btn.onclick = function () {
             modal.style.display = "block";
         }
+
+        document.querySelector("h1").backgroundColor = "#CC00FF";
 
         span.onclick = function () {
             modal.style.display = "none";
